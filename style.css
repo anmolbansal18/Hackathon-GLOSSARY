@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: #000000;
+    padding: 10px 30px;
+}
+.h1-left
+{
+    
+    color: #F36516;
+    font-family: 'Staatliches';
+    
+    font-size: 80px;
+    text-align: left;
+    display:inline-block;
+    
+}
+
+.h1-right
+{
+    
+    color: #a889c7;
+    font-style :Arial, sans-serif;
+    padding: 5px 5px;
+    font-size: 35px;
+    float: right
+    
+}
+div.main-container
+{
+    clear:both;
+    display: flex;
+    background-color:#271639 ;
+}
+.container-left
+{
+    width: 40%;  
+    height: 100px;
+    display: flex;
+    flex-direction: column; 
+    background-color:#a889c7;
+    min-height: 93.4vh;
+    box-shadow: 1px 0 1px 0 #ccc;
+    z-index: 3;
+}
+.container-right
+{
+    width: 60%;
+    height: 100px;
+    min-height: 93.4vh;
+    color: #a889c7;
+    padding: 40px 60px 40px 80px;
+    overflow-y: scroll;
+}
+.button-wrapper
+{
+    background: #a889c7;
+    padding: 20px 10px;
+    box-shadow: 0px 1px 1px 0 #ccc;
+}
+.btn-add
+{
+    background: #7641ab;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search
+{
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 8px 12px;
+    margin-left: 10px
+}
+#welcome
+{
+    margin-top:20px;
+    display: block;
+}
+#welcome h1
+{
+    font-size: 3em;
+}
+.text
+{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+form input
+{
+    width:40%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin-top: 20px;
+    color: gray;
+}
+input
+{
+    max-width: 100%;
+}
+form textarea
+{
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin-top: 15px;
+    color: gray;
+}
+.btn-submit
+{
+    width: 100%;
+    text-align: right;
+}
+.btn-submit button
+{
+    font-size:20px;
+    padding: 8px 12px;  
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #7641ab;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-submit button:hover
+{
+    background-color: #ccb4e3;
+}
+.questions
+{
+    overflow-y: scroll;
+}
+.que-item
+{
+    padding: 15px;
+    color:#271639;
+    background-color:#ccb4e3;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    cursor:pointer;
+}
+#description
+{
+    display: none;
+}
+.que-content
+{
+    background-color: #ccb4e3;
+    padding: 10px;
+    color:#271639;
+    margin-top:5px;
+}
+.que-content h2
+{
+    font-size:1.3em;
+}
+p.que-text
+{
+    margin: 5px 0;
+}
+.resolve
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.resolve button
+{
+    background: #ccb4e3;
+    padding: 8px 12px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.responses
+{
+    background-color: #ccb4e3;
+    margin-top:18px;
+}
+.response
+{
+    padding: 15px;
+    color:#271639;
+    border-bottom: 1px solid #ccc;
+}
+.response-form
+{
+    margin-top:40px;
+}
+.response-form form input
+{
+    font-size: 16px;
+    padding: 6px 10px;
+    margin-top: 15px;
+}
+
+.response-form form textarea
+{
+    font-size: 16px;
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+.response-form .btn-submit button
+{
+    font-size:14px; 
+    margin-top: 10px;
+    background: #ccb4e3;
+    padding: 8px 12px;
+}
+.yellow
+{
+    background: yellow;
+}
+.icons i
+{
+    padding: 0 3px;
+}
+.fa
+{
+    color: white;
+}
+.fa:hover, .fa:active
+{
+    color: #ccb4e3;
+}
+i.active
+{
+    color:red;
+}
+.que-item .que-title, .que-item .que-text
+{
+    padding-right: 30px;
+}
+.que-item .fav
+{
+    float: right;
+    position: relative;
+    bottom: 34px;    
+}
