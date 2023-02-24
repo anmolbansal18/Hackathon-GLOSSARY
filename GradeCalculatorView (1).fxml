@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.collections.FXCollections?>
+
+<VBox prefHeight="673.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GradeCalculatorController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <Label text="Project Grade">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="projectGradeTextField">
+	           <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="\%">
+	           <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+
+            <Label fx:id="projectGradeErrorLabel" text="" textFill="RED">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            
+            </Label>
+
+            <Label fx:id="projectGradeErrorLabel" text="" textFill="RED">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </HBox.margin>
+            </Label>
+
+            
+
+         </children>
+      </HBox>
+      <HBox prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <Label text="Required Coding Challenges Passed:">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </HBox.margin></Label>
+            <ChoiceBox fx:id="reqeiredCodingChallengesChoiceBox" prefWidth="150.0">
+	            <items>
+		            <FXCollections fx:factory="observableArrayList">
+			            <Integer fx:value="0" />
+			            <Integer fx:value="1" />
+			            <Integer fx:value="2" />
+			            <Integer fx:value="3" />
+			            <Integer fx:value="4" />
+			            <Integer fx:value="5" />
+			            <Integer fx:value="6" />
+			            <Integer fx:value="7" />
+			            <Integer fx:value="8" />
+			            <Integer fx:value="9" />
+			            <Integer fx:value="10" />
+			            <Integer fx:value="11" />
+			            <Integer fx:value="12" />
+			            <Integer fx:value="13" />
+			            <Integer fx:value="14" />
+			            <Integer fx:value="15" />
+		            </FXCollections>
+	            </items>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <Label text="Optional Coding Challenges Passed:   ">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin></Label>
+            <ChoiceBox fx:id="optionalCodingChallengesChoiceBox" prefWidth="150.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <Integer fx:value="0" />
+                        <Integer fx:value="1" />
+                        <Integer fx:value="2" />
+                        <Integer fx:value="3" />
+                        <Integer fx:value="4" />
+                        <Integer fx:value="5" />
+                        
+                    
+                    </FXCollections>
+                
+                </items>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            
+            
+                            
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <Label text="Number of required quizzes completed">
+               <HBox.margin>
+                <Insets bottom="10.0" left="30.0" right="10.0" top="14.0" />
+               </HBox.margin>
+               
+             </Label>
+             <ChoiceBox fx:id="reqQuizzesChoiceBox" prefWidth="150.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                   
+                        <Integer fx:value="1" />
+                        <Integer fx:value="2" />
+                        <Integer fx:value="3" />
+                        <Integer fx:value="4" />
+                        <Integer fx:value="5" />
+                        <Integer fx:value="6" />
+                        <Integer fx:value="7" />
+                        <Integer fx:value="8" />
+                        <Integer fx:value="9" />
+                        <Integer fx:value="10" />
+                        <Integer fx:value="11" />
+                        <Integer fx:value="12" />
+                        <Integer fx:value="13" />
+                        <Integer fx:value="14" />
+                        <Integer fx:value="15" />
+                        
+                    </FXCollections>
+                
+                </items>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            
+          
+            
+            
+            <Button mnemonicParsing="false" onAction="#getRequiredQuizGrades" text="Enter Required Quiz Grades">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+            
+         </children>
+         
+      </HBox>
+      
+      <HBox>
+         <children>
+         
+         <Label text="Number of Optional quizzes completed">
+                  <HBox.margin>
+                   <Insets bottom="10.0" left="30.0" right="10.0" top="18.0" />
+                  </HBox.margin>
+            </Label>
+         
+           <ChoiceBox fx:id="optQuizzesChoiceBox" prefWidth="150.0">
+                   <items>
+                       <FXCollections fx:factory="observableArrayList">
+                      
+                           <Integer fx:value="1" />
+                           <Integer fx:value="2" />
+                           <Integer fx:value="3" />
+                           <Integer fx:value="4" />
+                           <Integer fx:value="5" />
+                          
+                           
+                       </FXCollections>
+                   
+                   </items>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </ChoiceBox>
+               
+           <Button mnemonicParsing="false" onAction="#getOptionalQuizGrades" text="Enter Optional Quiz Grades">
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+            </Button>
+         </children>
+        </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+         
+         <HBox>
+            <children>
+               <Label text="Average Grade for Required Quizzes: ">
+                  <VBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="reqAverageQuizGrade" text="0.0">
+                  <VBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+                     <HBox.margin>
+                        <Insets left="10.0" top="1.0" />
+                     </HBox.margin>
+               </Label>
+              </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" top="25.0" />
+               </VBox.margin> 
+          </HBox> 
+          
+           <HBox>
+             <children>
+               <Label text="Average Grade for Optional Quizzes: ">
+                  <VBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+                     <HBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </HBox.margin>
+               </Label>
+                <Label fx:id="optAverageQuizGrade" text="0.0">
+                  <VBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+               </Label>
+            </children>
+           </HBox>
+                   
+            
+            <Button mnemonicParsing="false" onAction="#calculateGrade" text="Calculate Grade">
+               <VBox.margin>
+                  <Insets bottom="20" left="150.0" right="150.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+         </children> 
+       
+        
+      </VBox>
+      <Label fx:id="courseGradeLabel" text=" " />
+   </children>
+</VBox>
